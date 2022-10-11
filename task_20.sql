@@ -7,9 +7,9 @@ ELName varchar(30)
 );
 --SEQUENCE
 create sequence EmpID as int start with 50 increment by 2
-insert into test values(NEXT VALUE FOR EmpID,'Elena', 'Gilbert')
+insert into test values(NEXT VALUE FOR EmpID,'Sam', 'se')
 insert into test values(NEXT VALUE FOR EmpID,'Damon', 'Salvatore')
-insert into test values(NEXT VALUE FOR EmpID,'Stefan', 'Salvatore')
+insert into test values(NEXT VALUE FOR EmpID,'Shine', 'Salvatore')
 insert into test values(NEXT VALUE FOR EmpID,'Bonnie','Bennett')
 
 select * from test
@@ -20,7 +20,7 @@ create index FNAME on test(EFName)
 
 --SYNONYM
 CREATE SYNONYM Tes for test
-select * from tes where EFName='Elena'
+select * from tes where EFName='Sam'
 
 --VIEWS
 
@@ -75,7 +75,7 @@ SELECT DATEDIFF(year, '2000/11/06', '2022/11/06') as DateDiff_Output
 
 --Check if the enter date is valid or not
 SELECT ISDATE('2022-10-07') as Valid_date_Output --1
-SELECT ISDATE('Hiii!') as Invalid_date_Output --0
+SELECT ISDATE('Hello!') as Invalid_date_Output --0
 
 --Gives the specific part of date
 SELECT DATEPART(day, '2022/10/07') as DatePart_Output
