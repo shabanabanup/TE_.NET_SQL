@@ -80,7 +80,7 @@ drop database APP2
 
 --Working of explicit transaction with Save transaction
 
-insert into demo1 values(105, 'ELENA')
+insert into demo1 values(105, 'SAM')
 insert into demo1 values(106, 'DAMAON')
 insert into demo1 values(107, 'STEFAN')
 select * from demo1
